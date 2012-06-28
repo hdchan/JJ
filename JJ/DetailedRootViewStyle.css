@@ -1,0 +1,35 @@
+body {
+    font-size:14px;
+    font-family:  arial;
+}
+ul,li {
+    list-style:none;
+    padding-left:0px;
+    
+}
+
+a {
+    text-decoration:none;
+    color:#3399ff;
+}
+
+
+#title {
+    font-weight:bold;
+    font-size:14px;
+    text-align:center;
+    text-transform: uppercase;
+    line-height:100%
+}
+#pubDate {
+    color:grey;
+    font-size:13px;
+}
+#leadImage {
+    text-align:center;
+}
+iframe {
+    width:300;
+    height:auto;
+    margin:auto;
+}
