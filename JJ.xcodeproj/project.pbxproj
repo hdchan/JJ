@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		720F378316FB8B700018467C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 720F378216FB8B700018467C /* icon@2x.png */; };
+		720F378516FB8BCA0018467C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 720F378416FB8BCA0018467C /* Default-568h@2x.png */; };
 		7222AEBF1420518F00C63362 /* KTPhotoView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7222AEBC1420518E00C63362 /* KTPhotoView+SDWebImage.m */; };
 		7222AEC01420518F00C63362 /* KTThumbView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7222AEBE1420518E00C63362 /* KTThumbView+SDWebImage.m */; };
 		7222AED2142052B600C63362 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7222AEC6142052B600C63362 /* SDImageCache.m */; };
@@ -97,6 +98,7 @@
 
 /* Begin PBXFileReference section */
 		720F378216FB8B700018467C /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		720F378416FB8BCA0018467C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7222AEBB1420518E00C63362 /* KTPhotoView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KTPhotoView+SDWebImage.h"; sourceTree = "<group>"; };
 		7222AEBC1420518E00C63362 /* KTPhotoView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KTPhotoView+SDWebImage.m"; sourceTree = "<group>"; };
 		7222AEBD1420518E00C63362 /* KTThumbView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KTThumbView+SDWebImage.h"; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 		72232B0313F4C0B8007EED59 = {
 			isa = PBXGroup;
 			children = (
+				720F378416FB8BCA0018467C /* Default-568h@2x.png */,
 				720F378216FB8B700018467C /* icon@2x.png */,
 				729E0166141924F0001BC16C /* icon.png */,
 				72232B1813F4C0B8007EED59 /* JJ */,
@@ -624,6 +627,7 @@
 				727120DC1419C886009E0594 /* MainWindow.xib in Resources */,
 				72D24EC2142026B100B542A3 /* KTPhotoBrowser.bundle in Resources */,
 				720F378316FB8B700018467C /* icon@2x.png in Resources */,
+				720F378516FB8BCA0018467C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
