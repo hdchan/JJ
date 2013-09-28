@@ -146,8 +146,12 @@
     self.contentEncoded = nil;
     self.HTMLContent = nil;
     
-    [_webView setFrame:CGRectMake(0, 0, 320, 480-statusBarHeight-navigationBarHeight-toolBarHeight)];
-    [_scrollView setContentSize:CGSizeMake(320, 480-statusBarHeight-navigationBarHeight-toolBarHeight)];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenHeight = screenRect.size.height;
+    
+    [_webView setFrame:CGRectMake(0, 0, screenWidth, screenHeight-statusBarHeight-navigationBarHeight-toolBarHeight)];
+    [_scrollView setContentSize:CGSizeMake(screenWidth, screenHeight-statusBarHeight-navigationBarHeight-toolBarHeight)];
 
    
     
@@ -156,9 +160,9 @@
     NSString *heightString = [_webView stringByEvaluatingJavaScriptFromString:@"document.body.scrollHeight;"];
 
     height = [heightString floatValue];
-    _webView.frame = CGRectMake(0, 0, 320, height);
+    _webView.frame = CGRectMake(0, 0, screenWidth, height);
 
-    [_scrollView setContentSize:CGSizeMake(320, height)];
+    [_scrollView setContentSize:CGSizeMake(screenWidth, height)];
     if (_item.miniGalleryExists) [self getPhotoGalleryLinks];
     
 }
@@ -173,10 +177,14 @@
 
 #pragma mark - Setup View
 - (void)setUpDetailedView {
-   
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480-statusBarHeight-navigationBarHeight-toolBarHeight)];
     
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480-statusBarHeight-navigationBarHeight-toolBarHeight)];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenHeight = screenRect.size.height;
+   
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight-statusBarHeight-navigationBarHeight-toolBarHeight)];
+    
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight-statusBarHeight-navigationBarHeight-toolBarHeight)];
     [[[_webView subviews] lastObject] setScrollEnabled:NO];
     [self.scrollView addSubview:_webView];
     [self.view addSubview:_scrollView];
