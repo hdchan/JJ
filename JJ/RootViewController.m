@@ -16,14 +16,14 @@
 #define kDescriptionTag 997
 #define kpostDateTag 996
 
-//@implementation UINavigationBar (UINavigationBarCategory)
-//- (void)drawRect:(CGRect)rect {
-//    UIColor *color = [UIColor blackColor];
-//    UIImage *img  = [UIImage imageNamed: @"custom_navigationbar.png"];
-//    [img drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-//    self.tintColor = color;
-//}
-//@end
+@implementation UINavigationBar (UINavigationBarCategory)
+- (void)drawRect:(CGRect)rect {
+    UIColor *color = [UIColor blackColor];
+    UIImage *img  = [UIImage imageNamed: @"custom_navigationbar.png"];
+    [img drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    self.tintColor = color;
+}
+@end
 
 @implementation RootViewController
 
